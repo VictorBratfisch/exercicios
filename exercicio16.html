@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       let dias = parseInt(prompt('Quantos dias você trabalhou no mês?'));
+       let horas = parseInt(prompt('Quantas horas você trabalha no dia?'));
+       let ganho = parseInt(prompt('Quanto você ganha por hora?'));
+
+       let dh = dias * horas;
+       let bruto = dh * ganho;
+
+       if(horas > 8){
+        let extra = bruto * 0.1;
+        let bruto2= bruto + extra;
+        alert('O salário bruto é de '+bruto+', e com a hora extra fica '+bruto2);
+       }else{
+        alert('O salário bruto fica: '+bruto);
+       }
+    </script>
+  </body>
+</html>

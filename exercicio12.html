@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       let usuario = prompt('Digite seu usuário:');
+       let salario = parseFloat (prompt('Digite seu salário:'));
+
+       if(salario <= 280){
+        salarioalt = salario * 0.1;
+        document.write('Seu salário antes do reajuste é de '+salario+', o seu percentual de aumento foi de 10%, o aumento foi de '+ (salarioalt - salario) +', o novo salário ficou de '+salarioalt);
+       }else if(salario <= 700){
+        salarioalt = salario * 0.15;
+        document.write('Seu salário antes do reajuste é de '+salario+', o seu percentual de aumento foi de 15%, o aumento foi de '+ (salarioalt - salario) +', o novo salário ficou de '+salarioalt);
+       }else{
+        salarioalt = salario * 0.2;
+        document.write('Seu salário antes do reajuste é de '+salario+', o seu percentual de aumento foi de 20%, o aumento foi de '+ (salarioalt - salario) +', o novo salário ficou de '+salarioalt);
+       }
+    </script>
+  </body>
+</html>

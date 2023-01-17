@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 10</title>
+  </head>
+  <body>
+    <script>
+       let sexo = prompt('Qual o seu sexo: 1)M ou 2)F');
+       let altura = parseFloat(prompt('Qual sua altura?'));
+
+       let pesom =  (72.7 * altura) - 58;
+       let pesof = (62.1 * altura) - 44.7;
+       if(sexo == 1){
+        alert('Seu peso ideal é: '+ pesom);
+       }else if(sexo == 2){
+        alert('Seu peso ideal é: '+ pesof);
+       }else{
+        alert('Opção não existente');
+       }
+    </script>
+  </body>
+</html>
