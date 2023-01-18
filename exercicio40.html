@@ -8,17 +8,14 @@
   </head>
   <body>
     <script>
-       //let numero = parseInt(prompt('Digite um número:'));
+       let num = prompt('Digite o número que quer realizar a tabuada:');
+       let mult = [];
 
-       //for (numero == 0 && numero % numero && numero % 3)
-       //{
-        //if(true){
-          //alert('É um número primo');
-        //}else{
-            //alert('Não é um número primo');
-        //}
-    //}
-
+       for(i=0;i<11;i++){
+        let result = num * i;
+        mult.push(result);
+       }
+       document.write(mult+'<br>');
     </script>
   </body>
 </html>

@@ -8,17 +8,13 @@
   </head>
   <body>
     <script>
-       //let numero = parseInt(prompt('Digite um número:'));
-
-       //for (numero == 0 && numero % numero && numero % 3)
-       //{
-        //if(true){
-          //alert('É um número primo');
-        //}else{
-            //alert('Não é um número primo');
-        //}
-    //}
-
+       let user = prompt('Digite seu usuário:');
+       let senha = prompt('Digite sua senha:');
+       do{
+        alert('O usuário e senha não podem ser o mesmo');
+        user = prompt('Digite seu usuário:');
+        senha = prompt('Digite sua senha:');
+       }while(user==senha)
     </script>
   </body>
 </html>
