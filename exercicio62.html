@@ -7,14 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    <script>  
-       let lista = [];
-       let soma=0;
-       while(true){
-        let random = Math.random(soma);
-        soma2 = soma + random;
+    <script>
+       let num = parseInt(prompt('Digite um número:'));
+       let num2 = parseInt(prompt('Digite outro número:'));
+       if(num % num2 == 0){
+        alert('Os números são divisíveis');
+       }else{
+        alert('Os números não são divisíveis');
        }
-       alert(soma2);
     </script>
   </body>
 </html>

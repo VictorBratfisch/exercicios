@@ -7,14 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <script>  
-       let lista = [];
-       let soma=0;
-       while(true){
-        let random = Math.random(soma);
-        soma2 = soma + random;
+    <script>
+
+       let num = (prompt('Digite um número:'))
+       
+       let sum = 0
+
+       for(const element of num){
+            sum += parseInt(element)
        }
-       alert(soma2);
+
+       console.log(sum)   
     </script>
   </body>
 </html>

@@ -7,14 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    <script>  
-       let lista = [];
-       let soma=0;
-       while(true){
-        let random = Math.random(soma);
-        soma2 = soma + random;
+    <script>
+       let n = parseInt(prompt('Digite um número:'));
+       let s = (n*(n+1))/2;
+       if(s == n){
+        alert('É um número triângular');
+       }  else{
+        alert('Não é um número triângular');
        }
-       alert(soma2);
     </script>
   </body>
 </html>

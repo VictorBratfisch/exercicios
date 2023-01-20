@@ -7,14 +7,11 @@
     <title>Document</title>
   </head>
   <body>
-    <script>  
-       let lista = [];
-       let soma=0;
-       while(true){
-        let random = Math.random(soma);
-        soma2 = soma + random;
-       }
-       alert(soma2);
+    <script>
+       let dataInicio = parseInt(prompt('Digite a data inicial'));
+       let dataFim = parseInt(prompt('Digite a data final:'));
+       let dif = dataFim - dataInicio;
+       alert('A diferença de dias entre as datas é de: '+dif);
     </script>
   </body>
 </html>
