@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculo(matriz) {
+        let result = 0;
+        for (i = 0; i < matriz.length; i++) {
+          result += matriz[i][4 - 1 - i];
+        }
+        return result;
+      }
+
+      const batata = [
+        [2, -8, 15, 5],
+        [1, 7, 20, -9],
+        [0, 9, 9, -8],
+        [-1, 6, 0, 22],
+      ];
+
+      console.log(calculo(batata));
+    </script>
+  </body>
+</html>

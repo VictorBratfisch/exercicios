@@ -8,9 +8,22 @@
   </head>
   <body>
     <script>
-       let lista = ['27','9','22'];
-       let min = Math.min(...lista);
-       console.log(min);
+        const matriz = [
+  [2,-8,15,6],
+  [1,7,20,-9],
+  [0,-4,9,-8],
+  [-1,6,0,22]
+];
+
+function calculo(matriz) {
+  const count = matriz.length;
+  let result = 0;
+  for(let i = 0; i < count; i++) {
+    result += matriz[i][i];
+  }
+  return result;
+}    
+console.log(calculo(matriz));
     </script>
   </body>
 </html>

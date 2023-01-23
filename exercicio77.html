@@ -8,9 +8,12 @@
   </head>
   <body>
     <script>
-       let lista = ['27','9','22'];
-       let min = Math.min(...lista);
-       console.log(min);
+     var senha = "123";
+var segredo = btoa(senha);
+var revelado = atob(segredo);
+
+console.log("segredo: " + segredo);
+console.log("revelado: " + revelado);
     </script>
   </body>
 </html>
